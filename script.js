@@ -10,7 +10,7 @@ function adBlockDetector() {
             console.log('No ad blocker detected!')
         }
 
-    }, 1000)
+    }, 3000)
 }
 
 adBlockDetector()
