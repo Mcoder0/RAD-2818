@@ -14,3 +14,9 @@ function adBlockDetector() {
 }
 
 adBlockDetector()
+
+window.addEventListener('load', function(){
+    fetch('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+    .then(res=> console.log('ads allowed'))
+    .catch(err=>console.log('adblock detected!'))
+})
